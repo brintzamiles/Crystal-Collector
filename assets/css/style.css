@@ -7,21 +7,31 @@ img { height: 125px;
 .img-crystals {
     color: blue;
 }
-h1, p     { 
+h1, p, h2    { 
     color: purple;
+    font-family: fantasy;
 
 }
 .jumbotron {
     margin: 30px;
     
+
     padding: 30px;
 }
 
 #img-container{
-box-align: center;
+margin:50px;
 margin-bottom: 15px;
 padding-bottom: 30px;}
 
+#target-Number, #Wins, #Losses, #user-Total {
+    font-weight: bolder;
+
+}
+
 #main-container {
     background-image: url('../images/Crystal\ Hearts\ Wallpapers.jpg');
+    padding-top: 20px;
+    margin-top: 20px;
+    
 }
