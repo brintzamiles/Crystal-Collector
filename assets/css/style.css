@@ -1,14 +1,27 @@
 
 
-img { height: 175px;
-    width: 175px;
+img { height: 125px;
+    width: 125px;
 }
 
-h1 { 
+.img-crystals {
     color: blue;
+}
+h1, p     { 
+    color: purple;
 
+}
+.jumbotron {
+    margin: 30px;
+    
+    padding: 30px;
 }
 
 #img-container{
-margin-left: 0;
-margin-right: 0;}
+box-align: center;
+margin-bottom: 15px;
+padding-bottom: 30px;}
+
+#main-container {
+    background-image: url('../images/Crystal\ Hearts\ Wallpapers.jpg');
+}

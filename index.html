@@ -19,65 +19,70 @@
 </head>
 
 <body>
-  
-    <div class="card">
-        <div class="card-body">
+    <div class=container id="main-container">
+        <div class="jumbotron">
             <div class="text-center">
-                <h1 class="card-title">Crystal Collectors! </h1>
-                <h3 class="card-text">Instructions</h3>
-            </div>
-        </div>
-        <div class="text-center">
+                <h1 class="display-3">Crystal Collectors!</h1>
+                <h2 class="lead">Instructions</h2>
+                <hr class="my-4">
+                <p> You will be given a random number at the start of the game.</p>
+                <p> By clicking on a crystal, you will add a specific
+                    amount of points to your total score.</p>
+                <p> You will win the game by matching your total score to the random number.</p>
+                <p> You value of each crystal is hidden from you until you click on it.</p>
+                <p> Each time the game starts, the game will change the value of each crystal.</p>
+                <p class="lead">
+                    <div class="row">
+                        <div class="col-md-3">
 
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">You will be given a random number at the start of the game.</li>
-                <li class="list-group-item">There are 4 crystals below. By clicking on a crystal, you will add a
-                    specific
-                    amount of points to your total score.</li>
-                <li class="list-group-item">You will win the game by matching your total score to the random number.</li>
-                <li class="list-group-item">You value of each crystal is hidden from you until you click on it.</li>
-                <li class="list-group-item">Each time the game starts, the game will change the value of each crystal.</li>
-            </ul>
-        </div>
+                            <p id="Header-Target-">Target Number </p>
 
-    </div>
+                            <p id=target-Number> -- </p>
+                        </div>
+                        <div class="col-md-3">
 
-    <div class="container" id="img-container">
-        <div class="row">˜
-            <div class="col-md-12" id="img-crystals">
-                <img src="assets/images/red_crystal.jpg" alt="red crystal" id="red-Crystal">
-                <img src="assets/images/blue_crystal.jpg" alt="blue crystal" id="blue-Crystal">
-                <img src="assets/images/yellow_crystal.jpg" alt="yellow crystal" id="yellow-Crystal">
-                <img src="assets/images/purple_crystal.jpg" alt="purple crystal" id="purple-Crystal">
-            </div>
+                            <p id="Header-Wins">Wins
+                            </p>
+                            <p id="Wins">--
+                            </p>
+                        </div>
+                        <div class="col-md-3">
 
-        </div>
-    </div>
-t
-    <div class="container" id="rand_wl-container">
-        <div class="row">
-            <div class="col-md-12" id="Header-Target-Num-Wins-Losses">
-                <h4 id="Header-Target-">Target Number
+                            <p id="Header-Losses">Losses
+                            </p>
+                            <p id="Losses">--
+                            </p>
+                        </div>
+                        <div class="col-md-3">
 
-                    <h4 id=target-Number></h4> --
-
-                    <h4 id="Header-Wins">Wins
-                    </h4>
-                    <h4 id="Wins">--
-                    </h4>
-
-                    <h4 id="Header-Losses">Losses
-                    </h4>
-                    <h4 id="Losses">--
-                    </h4>
-
-                    <h4 id="Header-User-Total">User Total
-                        </h4>
-                        <h4 id="user-Total">--
-                        </h4>
+                            <p id="Header-User-Total">User Total
+                            </p>
+                            <p id="user-Total">--
+                            </p>
+                        </div>
+                    </div>
 
             </div>
+        </div>
 
+        <div class=container id="img-container">
+            <div class="row">
+                <div class="col-md-3" id="red-Crystal">
+                    <img src="assets/images/red_crystal.jpg" alt="red crystal">
+                </div>
+                <div class="col-md-3" id="blue-Crystal">
+
+                    <img src=" assets/images/blue_crystal.jpg" alt="blue crystal">
+                </div>
+                <div class="col-md-3" id="yellow-Crystal">
+
+                    <img src=" assets/images/yellow_crystal.jpg" alt="yellow crystal">
+                </div>
+                <div class="col-md-3" id="purple-Crystal">
+
+                    <img src="assets/images/purple_crystal.jpg" alt="purple crystal">
+                </div>
+            </div>
 
         </div>
     </div>

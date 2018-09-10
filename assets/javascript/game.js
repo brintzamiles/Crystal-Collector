@@ -113,20 +113,29 @@ $('#purple-Crystal').on('click', function () {
 });
 
 function youWin() {
-    alert("You win!");
+    $('#user-Total').text(userTotal);
+
+    alert("You win! Target:  " + userTotal);
     wins++;
     $('#Wins').text(wins);
     newGameFlag = true;
     userTotal = 0;
+    $('#user-Total').text(userTotal);
+
 
     newGame();
 }
 function youLose() {
-    alert("You lose!");
+    $('#user-Total').text(userTotal);
+
+    alert("You lose! Target:  " + userTotal);
     losses++;
     $('#Losses').text(losses);
     newGameFlag = true;
+    
     userTotal = 0;
+    $('#user-Total').text(userTotal);
+
 
 
     newGame()
