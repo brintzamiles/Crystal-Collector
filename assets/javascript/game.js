@@ -15,10 +15,12 @@ function newGame() {
 
     // Selects a random number to be shown at the start of the game
     // Number should be should be between 19 - 120
+
     if (newGameFlag) {
+
         var upperBoundTarget = 120;
         var lowerBoundTarget = 19;
-        targetNumber = Math.floor(Math.random() * upperBoundTarget - lowerBoundTarget) + lowerBoundTarget;
+        targetNumber = Math.floor(Math.random() * (upperBoundTarget - lowerBoundTarget) + lowerBoundTarget);
         console.log("targetNumber:  " + targetNumber);
         $('#target-Number').text(targetNumber);
 
@@ -28,16 +30,16 @@ function newGame() {
         var upperBoundCrystal = 12
         var lowerBoundCrystal = 1
 
-        redNum = Math.floor(Math.random() * upperBoundCrystal - lowerBoundCrystal) + lowerBoundCrystal;
+        redNum = Math.floor(Math.random() * (upperBoundCrystal - lowerBoundCrystal) + lowerBoundCrystal);
         console.log("Red " + redNum);
 
-        blueNum = Math.floor(Math.random() * upperBoundCrystal - lowerBoundCrystal) + lowerBoundCrystal;
+        blueNum = Math.floor(Math.random() * (upperBoundCrystal - lowerBoundCrystal) + lowerBoundCrystal);
         console.log("Blue " + blueNum);
 
-        yellowNum = Math.floor(Math.random() * upperBoundCrystal - lowerBoundCrystal) + lowerBoundCrystal;
+        yellowNum = Math.floor(Math.random() * (upperBoundCrystal - lowerBoundCrystal) + lowerBoundCrystal);
         console.log("Yellow " + yellowNum);
 
-        purpleNum = Math.floor(Math.random() * upperBoundCrystal - lowerBoundCrystal) + lowerBoundCrystal;
+        purpleNum = Math.floor(Math.random() * (upperBoundCrystal - lowerBoundCrystal) + lowerBoundCrystal);
         console.log("Purple " + purpleNum);
 
 
@@ -58,13 +60,17 @@ function newGame() {
 //Handle the crystal clicks
 $('#red-Crystal').on('click', function () {
     newGame();
+
     userTotal = userTotal + redNum;
     console.log("New userTotal= " + userTotal);
     $('#user-Total').text(userTotal);
     //sets win/lose conditions
     if (userTotal == targetNumber) {
+
         youWin();
     } else if (userTotal > targetNumber) {
+        $('#user-Total').text(userTotal);
+
         youLose();
     }
 })
@@ -85,7 +91,6 @@ $('#blue-Crystal').on('click', function () {
 
 $('#yellow-Crystal').on('click', function () {
     newGame();
-
     userTotal = userTotal + yellowNum;
     console.log("New userTotal= " + userTotal);
     $('#user-Total').text(userTotal);
@@ -99,7 +104,6 @@ $('#yellow-Crystal').on('click', function () {
 
 $('#purple-Crystal').on('click', function () {
     newGame();
-
     userTotal = userTotal + purpleNum;
     console.log("New userTotal= " + userTotal);
     $('#user-Total').text(userTotal);
@@ -113,34 +117,27 @@ $('#purple-Crystal').on('click', function () {
 });
 
 function youWin() {
-    $('#user-Total').text(userTotal);
 
-    alert("You win! Target:  " + userTotal);
+    //alert("You win! Target:  " + targetNumber);
     wins++;
+    $('#winLossMsg').text("You Win!");
     $('#Wins').text(wins);
     newGameFlag = true;
     userTotal = 0;
     $('#user-Total').text(userTotal);
-
-
+    //$('#winLossMsg').text(" ");
     newGame();
 }
-function youLose() {
-    $('#user-Total').text(userTotal);
 
-    alert("You lose! Target:  " + userTotal);
+function youLose() {
+
+    //alert("You lose! Target:  " + targetNumber + ".  Your total is:  " + userTotal);
     losses++;
+    $('#winLossMsg').text("You Lose!");
     $('#Losses').text(losses);
     newGameFlag = true;
-    
     userTotal = 0;
     $('#user-Total').text(userTotal);
-
-
-
+    //$('#winLossMsg').text(" ");
     newGame()
 }
-
-
-
-

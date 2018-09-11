@@ -12,6 +12,9 @@ h1, p, h2    {
     font-family: fantasy;
 
 }
+h2 {
+    font-weight: bolder;
+}
 .jumbotron {
     margin: 30px;
     
