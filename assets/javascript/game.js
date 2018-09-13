@@ -23,6 +23,8 @@ function newGame() {
         targetNumber = Math.floor(Math.random() * (upperBoundTarget - lowerBoundTarget) + lowerBoundTarget);
         console.log("targetNumber:  " + targetNumber);
         $('#target-Number').text(targetNumber);
+        userTotal = 0;
+
 
         // Setting up random numbers for each jewel
         // Random number has to be between 1 - 12
@@ -123,10 +125,8 @@ function youWin() {
     $('#winLossMsg').text("You Win!");
     $('#Wins').text(wins);
     newGameFlag = true;
-    userTotal = 0;
     $('#user-Total').text(userTotal);
     //$('#winLossMsg').text(" ");
-    newGame();
 }
 
 function youLose() {
@@ -136,8 +136,6 @@ function youLose() {
     $('#winLossMsg').text("You Lose!");
     $('#Losses').text(losses);
     newGameFlag = true;
-    userTotal = 0;
     $('#user-Total').text(userTotal);
     //$('#winLossMsg').text(" ");
-    newGame()
 }
