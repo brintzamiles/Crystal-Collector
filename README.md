@@ -1,5 +1,6 @@
 # Crystal Collector
 
+Github:  https://brintzamiles.github.io/Crystal-Collector/
 
 1.  The assignment displays my understanding of jQuery 
 
