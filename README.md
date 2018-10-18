@@ -1,7 +1,5 @@
 # Crystal Collector
-### CrystalsCollector Game 
 
-![Crystal Collector]
 
 1.  The assignment displays my understanding of jQuery 
 
